@@ -6,10 +6,10 @@ To write a python program for simulating ARP protocols using TCP.
 ## ALGORITHM:
 ## Client:
 1. Start the program
-2. Using socket connection is established between client and server.
+2. Using socket connection is established between the client and the server.
 3. Get the IP address to be converted into MAC address.
-4. Send this IP address to server.
-5. Server returns the MAC address to client.
+4. Send this IP address to the server.
+5. Server returns the MAC address to the client.
 ## Server:
 1. Start the program
 2. Accept the socket which is created by the client.
@@ -44,8 +44,8 @@ while True:
     s.send(ip.encode())
     print("MAC Address",s.recv(1024).decode())
 ``` 
-## OUPUT - ARP
-<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/42825ce4-57c0-4e68-9775-355914244366" />
+## OUTPUT - ARP
+<img width="1847" height="990" alt="image" src="https://github.com/user-attachments/assets/0bcce4e1-ead6-42d2-96b4-7e21920f7e58" />
 
 ## PROGRAM - RARP
 # CLIENT
@@ -74,9 +74,11 @@ while True:
     print("Logical Address",s.recv(1024).decode())
 ```
 
-## OUPUT -RARP
-<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/8433bbe0-449f-4128-a787-fc93de893c9f" />
+## OUTPUT -RARP
+<img width="1850" height="975" alt="image" src="https://github.com/user-attachments/assets/8a853ad4-2d01-4bf5-948b-b8e939be6571" />
+
+
 
 ## RESULT
-Thus, the python program for simulating ARP protocols using TCP was successfully 
+Thus, the Python program for simulating ARP protocols using TCP was successfully 
 executed.
